@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <input type="text" class="input">
+        <form>
+            <table class="table">
+                <tr>
+                    <td>
+                        <button class="clear">C</button>
+                    </td>
+                    <td>
+                        <button class="operation" value="*">*</button>
+                    </td>
+                    <td>
+                        <button class="operation" value="/">/</button>
+                    </td>
+                    <td>
+                        <button class="del"><img src="delete.png"></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button value="7">7</button>
+                    </td>
+                    <td>
+                        <button value="8">8</button>
+                    </td>
+                    <td>
+                        <button value="9">9</button>
+                    </td>
+                    <td>
+                        <button onclick="plus()">+</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick="4">4</button>
+                    </td>
+                    <td>
+                        <button onclick="5">5</button>
+                    </td>
+                    <td>
+                        <button onclick="6">6</button>
+                    </td>
+                    <td>
+                        <button onclick="minus()">-</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick="1">1</button>
+                    </td>
+                    <td>
+                        <button onclick="2">2</button>
+                    </td>
+                    <td>
+                        <button onclick="3">3</button>
+                    </td>
+                    <td rowspan="2">
+                        <button onclick="result()" class="row_span">=</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick="persent()">%</button>
+                    </td>
+                    <td>
+                        <button onclick="0">0</button>
+                    </td>
+                    <td>
+                        <button onclick="dot()">.</button>
+                    </td>
+                    <!-- <td>
+                        <button>+</button>
+                    </td> -->
+                </tr>
+            </table>
+        </form>
+    </div>
+    <script src="scr.js"></script>
+</body>
+
+</html>
